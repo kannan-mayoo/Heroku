@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background: rgb(68, 86, 68);
+}
+
+.container {
+    background: rgb(231, 249, 211);
+    max-width: 26rem;
+    margin: 4rem auto;
+}
+
+header {
+    background: rgb(160, 213, 160);
+    height: 3rem;
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid rgb(19, 234, 19);
+}
+
+header .compass-icon {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    transform: translate(-50%);
+    background: rgb(117, 160, 32);
+    padding: 10px;
+    left: 50%;
+    top: 20px;
+    border-radius: 50%;
+}
+
+.weather-title {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.weather-title h1 {
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+form {
+    padding: 0.5rem;
+}
+
+form input {
+    width: 100%;
+    height: 3rem;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    text-align: center;
+    border-bottom: 1px solid rgb(117, 112, 112);
+}
+
+.result {
+    text-align: center;
+}
+
+.result .temp-celsius {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result .temp-celsius .temp {
+    font-size: 2rem;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.result .temp-celsius .temp::after {
+    content: "o";
+    font-size: 15px;
+    position: absolute;
+    top: -5px;
+    right: -1rem;
+}
+
+.result .temp-celsius .celsius {
+    top: 18px;
+    left: 20px;
+    font-size: 20px;
+    width: 5px;
+    position: relative;
+}
+
+.result .icon-desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result .icon-desc .icon {
+    margin-right: 1rem;
+}
+
+.result .city {
+    font-size: 1rem;
+}
